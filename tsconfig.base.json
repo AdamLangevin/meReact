@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@py120/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@py120/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@py120/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

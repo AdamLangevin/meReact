@@ -1,16 +1,16 @@
 import * as express from 'express';
-import { Message } from '@py120/api-interfaces';
+import { addAboutRoutes } from './app/about';
 
 const app = express();
 
-const greeting: Message = { message: 'Welcome to api!' };
 
-app.get('/api', (req, res) => {
-  res.send(greeting);
+app.get('/app', (req, res) => {
+  res.send({ message: 'Welcome to api!' });
 });
+addAboutRoutes(app);
 
-const port = process.env.port || 3333;
+const port = process.env.port || 4200;
 const server = app.listen(port, () => {
-  console.log('Listening at http://localhost:' + port + '/api');
+  console.log(`Listening at http://localhost:${port}/app`);
 });
 server.on('error', console.error);

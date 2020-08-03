@@ -1,0 +1,26 @@
+.drawerContainer{
+    max-width: 250px;
+}
+
+.drawer{
+    background-color: deeppink;
+    width: 250px;
+}
+
+.rightArrow{
+    height: 25px;
+    position: fixed;
+    top:33%;
+    left:2px;
+}
+
+.drawerShadow{
+    top:5%;
+    left:9px;
+    position: fixed;
+    height: 60%;
+    width: 15px;
+    opacity: 45%;
+    border-radius: 0 5px 5px 0;
+    background-color: grey;
+}

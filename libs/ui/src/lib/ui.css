@@ -1,0 +1,11 @@
+.ui{
+    background-color: darkslateblue;
+    min-width: 400px;
+    width:80%;
+    margin: auto;
+    align-items: center;
+}
+
+.muipaper-root{
+    background-color: deeppink;
+}
