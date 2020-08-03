@@ -1,5 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --primary-0:#670023;	/* Main Primary color */
+    --primary-1: #A62953;
+    --primary-2: #861138;
+    --primary-3: #460017;
+    --primary-4: #25000C;
+
+    --secondary-1-0: #6C7300;	/* Main Secondary color (1) */
+    --secondary-1-1 : #B2BA2E;
+    --secondary-1-2 : #8E9613;
+    --secondary-1-3 : #494E00;
+    --secondary-1-4 : #262900;
+
+    --secondary-2-0 : #3A034D;	/* Main Secondary color (2) */
+    --secondary-2-1 : #65237D;
+    --secondary-2-2 : #4F1065;
+    --secondary-2-3 : #270134;
+    --secondary-2-4 : #14001C;
+
+    --complement-0 : #336900;	/* Main Complement color */
+    --complement-1 : #68A92A;
+    --complement-2 : #4C8911;
+    --complement-3 : #234700;
+    --complement-4 : #122500;
+
+    background-color: var(--primary-3);
+}
+
 #root{
-    background-color: rgb(80, 7, 252);
     height: 1200px;
 }

@@ -2,7 +2,6 @@ import React from 'react';
 
 import { Route, Link } from 'react-router-dom';
 
-import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
@@ -17,22 +16,24 @@ import MailIcon from '@material-ui/icons/Mail';
 import rightArrow from "./right-arrow-png-transparent-23.png";
 
 import './nav-bar.css';
-import { listenerCount } from 'stream';
+import { SvgIconProps, SvgIcon } from '@material-ui/core';
 
 /* eslint-disable-next-line */
 export interface NavBarProps {}
 
-// declare module "*.png" {
-//   const content: string;
-//   export default content;
-// }
-
 const useStyles = makeStyles({
+  root:{
+    backgroundColor: 'var(--secondary-1-3)',
+  },
   list: {
     width: 250,
   },
   fullList: {
     width: 'auto',
+  },
+  paper:{
+    backgroundColor: 'var(--primary-2)',
+    color: 'white',
   },
 });
 
@@ -57,12 +58,20 @@ const toggleDrawer = (anchor: Anchor, open: boolean) => (
   setState({ ...state, [anchor]: open });
 };
 
+function HomeIcon(props: SvgIconProps){
+  return(
+    <SvgIcon {...props}>
+      <path d="./home.png" />
+    </SvgIcon>
+  );
+}
+
 const list = (anchor: Anchor) => (
-  <div className='drawer' role="presentation" onClick={toggleDrawer(anchor, false)} onKeyDown={toggleDrawer(anchor, false)}>
+  <div className={classes.paper} role="presentation" onClick={toggleDrawer(anchor, false)} onKeyDown={toggleDrawer(anchor, false)}>
     <List>
       {['Home', 'Tech Interests', 'Personal Interests', 'Contact'].map((text, index) => (
         <ListItem button key={text}>
-          <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+          <ListItemIcon>{index === 0 ? <HomeIcon /> : index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
           <ListItemText primary={text} />
         </ListItem>
       ))}
@@ -71,7 +80,9 @@ const list = (anchor: Anchor) => (
     <List>
       {['Git', 'Linked IN', 'Resumee'].map((text, index) => (
         <ListItem button key={text}>
-          <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+          <ListItemIcon>{
+            index % 2 === 0 ? <InboxIcon style={{color:'var(--secondary-2-4)'}} /> : <MailIcon />
+          }</ListItemIcon>
           <ListItemText primary={text} />
         </ListItem>
       ))}
@@ -80,7 +91,7 @@ const list = (anchor: Anchor) => (
 );
 
   return (
-    <div className='drawerContainer'>
+    <>
        {['left'].map((anchor) => (
         <React.Fragment key={anchor}>
             <Button onClick={toggleDrawer("left", true)}>
@@ -88,12 +99,12 @@ const list = (anchor: Anchor) => (
                 <img className="rightArrow" src={rightArrow} /> 
               </div>
             </Button>
-          <Drawer anchor='left' open={state[anchor]} onClose={toggleDrawer('left', false)}>
+            <Drawer classes={{paper:classes.paper,}} anchor='left' open={state[anchor]} onClose={toggleDrawer('left', false)}>
             {list('left')}
           </Drawer>
         </React.Fragment>
        ))}
-    </div>
+    </>
   );
 };
 

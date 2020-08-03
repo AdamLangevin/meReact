@@ -3,20 +3,20 @@
 }
 
 .drawer{
-    background-color: deeppink;
+    background-color: var(--primary-0);
     width: 250px;
 }
 
 .rightArrow{
-    height: 25px;
+    height: 27px;
     position: fixed;
-    top:33%;
-    left:2px;
+    top:34.33%;
+    left:-6px;
 }
 
 .drawerShadow{
     top:5%;
-    left:9px;
+    left:0px;
     position: fixed;
     height: 60%;
     width: 15px;

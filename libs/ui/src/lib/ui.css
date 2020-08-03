@@ -1,8 +1,10 @@
 .ui{
-    background-color: darkslateblue;
+    background-color: var(--primary-0);
+    color: black;
     min-width: 400px;
     width:80%;
     margin: auto;
     align-items: center;
+    font-size: medium;
 }
 

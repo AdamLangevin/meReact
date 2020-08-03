@@ -128,8 +128,5 @@
 }
 
 .mainContainer{
-  background-color: deepskyblue;
-}
-.root{
-  background-color: fuchsia;
+  background-color: var(--secondary-2-1);
 }
