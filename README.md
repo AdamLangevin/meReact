@@ -6,7 +6,7 @@ This project was generated using [Nx](https://nx.dev).
 
 🔎 **Nx is a set of Extensible Dev Tools for Monorepos.**
 
-I am using this as an exorcize to learn React, Nx, and type script.
+I am using this as an exorcise to learn React, Nx, and type script.
 
 ## Adding capabilities to your workspace
 

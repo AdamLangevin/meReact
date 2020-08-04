@@ -22,9 +22,6 @@ import { SvgIconProps, SvgIcon } from '@material-ui/core';
 export interface NavBarProps {}
 
 const useStyles = makeStyles({
-  root:{
-    backgroundColor: 'var(--secondary-1-3)',
-  },
   list: {
     width: 250,
   },
@@ -32,7 +29,7 @@ const useStyles = makeStyles({
     width: 'auto',
   },
   paper:{
-    backgroundColor: 'var(--primary-2)',
+    backgroundColor: 'var(--primary-3)',
     color: 'white',
   },
 });

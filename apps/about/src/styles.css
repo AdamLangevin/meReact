@@ -24,7 +24,7 @@
     --complement-3 : #234700;
     --complement-4 : #122500;
 
-    background-color: var(--primary-3);
+    background-color: var(--secondary-2-4);
 }
 
 #root{
