@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import { Ui, NavBar} from "@py120/ui";
+import { Ui, NavBar, Footer } from "@py120/ui";
 
 interface About {
 	title: string;
@@ -12,7 +12,9 @@ export const App = () => {
 	    <div className="mainContainer">
 			<NavBar />
 			<Ui />
+			
 	    </div>
+		<Footer />
         </>
     );
 };

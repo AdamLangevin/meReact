@@ -9,7 +9,7 @@ export const Ui = (props: UiProps) => {
   return (
     <div className="ui">
       <p>content</p>
-      
+      {/* <img src="./test.png" /> */}
     </div>
   );
 };

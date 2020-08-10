@@ -1,0 +1,27 @@
+.text {
+    color: var(--secondaryText);
+    font:medium;
+    align-items: center;
+    margin:auto;
+    width:60%;
+    text-align: center;
+}
+
+.footer{
+    position: absolute;
+    min-height: 10%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin:auto;
+    align-items: center;
+    width: 90%;
+    background-color: var(--secondary-2-3);
+}
+
+.socialContainer{
+    margin:auto;
+    align-items: center;
+    width: 72px;
+    height: 45px;
+}

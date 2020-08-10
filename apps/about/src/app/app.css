@@ -129,4 +129,5 @@
 
 .mainContainer{
   background-color: var(--secondary-2-1);
+  height: 100%;
 }

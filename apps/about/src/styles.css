@@ -24,6 +24,8 @@
     --complement-3 : #234700;
     --complement-4 : #122500;
 
+    --secondaryText : #433247;
+
     background-color: var(--secondary-2-4);
 }
 
