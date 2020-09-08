@@ -16,7 +16,8 @@ import MailIcon from '@material-ui/icons/Mail';
 import rightArrow from "./right-arrow-png-transparent-23.png";
 
 import './nav-bar.css';
-import { SvgIconProps, SvgIcon } from '@material-ui/core';
+import { SvgIconProps, SvgIcon, Icon, IconProps } from '@material-ui/core';
+import homeI from './home.png';
 
 /* eslint-disable-next-line */
 export interface NavBarProps {}
@@ -31,6 +32,10 @@ const useStyles = makeStyles({
   paper:{
     backgroundColor: 'var(--primary-3)',
     color: 'white',
+  },
+  icon:{
+    width: 25,
+    height: 25
   },
 });
 
@@ -55,11 +60,11 @@ const toggleDrawer = (anchor: Anchor, open: boolean) => (
   setState({ ...state, [anchor]: open });
 };
 
-function HomeIcon(props: SvgIconProps){
+function HomeIcon(props: IconProps){
   return(
-    <SvgIcon {...props}>
-      <path d="./home.png" />
-    </SvgIcon>
+    <Icon {...props}>
+      <img src={homeI} className={classes.icon} />
+    </Icon>
   );
 }
 

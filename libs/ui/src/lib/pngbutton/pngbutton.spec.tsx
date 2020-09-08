@@ -1,13 +1,11 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import Ui from './ui';
+import Pngbutton from './pngbutton';
 
-import { pngbtn } from '@py120/ui';
-
-describe(' Ui', () => {
+describe(' Pngbutton', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<Ui />);
+    const { baseElement } = render(<Pngbutton />);
     expect(baseElement).toBeTruthy();
   });
 });
