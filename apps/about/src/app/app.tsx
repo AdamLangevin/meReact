@@ -35,7 +35,7 @@ export const App = () => {
 	    <div className="mainContainer">
 			<NavBar />
 			<Ui />
-			{user ? <UserDetail user={user} /> : <Login setUser={setUser} />}
+			{/* {user ? <UserDetail user={user} /> : <Login setUser={setUser} />} */}
 	    </div>
 		<Footer />
         </>
