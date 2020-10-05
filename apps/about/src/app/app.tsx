@@ -30,8 +30,10 @@ interface About {
 	title: string;
 }
 
+//needs an intermediate container to hold the icon, like messenger bubble
 const PopCont = ({ children }) => (
 	<Container style={{ margin: 20, width: 25, height: 25, 'min-width': 25, }}>
+		
 	</Container>
 );
 
