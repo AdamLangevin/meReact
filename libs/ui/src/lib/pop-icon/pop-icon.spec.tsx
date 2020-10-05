@@ -1,12 +1,11 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import Ui from './ui';
+import PopIcon from './pop-icon';
 
-
-describe(' Ui', () => {
+describe('PopIcon', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<Ui />);
+    const { baseElement } = render(<PopIcon />);
     expect(baseElement).toBeTruthy();
   });
 });

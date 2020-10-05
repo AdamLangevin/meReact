@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
-import { Ui, NavBar, Footer } from "@py120/ui";
+import { Ui, NavBar, Footer, Newsbtn, PopIcon } from "@py120/ui";
 
 import * as Realm from "realm-web";
 import { userInfo } from 'os';
+//import { Container } from '@material-ui/core';
+import { Container } from "semantic-ui-react";
 
 const appid = "py120aIDa1-tnvfa";
 const app: Realm.App = new Realm.App({ id: appid });
@@ -28,6 +30,11 @@ interface About {
 	title: string;
 }
 
+const PopCont = ({ children }) => (
+	<Container style={{ margin: 20, width: 25, height: 25, 'min-width': 25, }}>
+	</Container>
+);
+
 export const App = () => {
 	const [user, setUser] = React.useState<Realm.User | null>(app.currentUser);
     return(
@@ -36,7 +43,13 @@ export const App = () => {
 			<NavBar />
 			<Ui />
 			{/* {user ? <UserDetail user={user} /> : <Login setUser={setUser} />} */}
+			<PopCont>
+				<PopIcon />
+			</PopCont>
+			{/* <PopIcon /> */}
+			{/* <Newsbtn /> */}
 	    </div>
+		
 		<Footer />
         </>
     );

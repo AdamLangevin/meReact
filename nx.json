@@ -37,6 +37,12 @@
     },
     "ui": {
       "tags": []
+    },
+    "pop-icon": {
+      "tags": []
+    },
+    "ui-src-lib-pop-icon": {
+      "tags": []
     }
   }
 }

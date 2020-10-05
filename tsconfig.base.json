@@ -17,7 +17,9 @@
     "baseUrl": ".",
     "paths": {
       "@py120/api-interfaces": ["libs/api-interfaces/src/index.ts"],
-      "@py120/ui": ["libs/ui/src/index.ts"]
+      "@py120/ui": ["libs/ui/src/index.ts"],
+      "@py120/pop-icon": ["libs/pop-icon/src/index.ts"],
+      "@py120/ui/src/lib/pop-icon": ["libs/ui/src/lib/pop-icon/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -215,6 +215,60 @@
           }
         }
       }
+    },
+    "pop-icon": {
+      "root": "libs/pop-icon",
+      "sourceRoot": "libs/pop-icon/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "tsConfig": [
+              "libs/pop-icon/tsconfig.lib.json",
+              "libs/pop-icon/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/pop-icon/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/pop-icon/jest.config.js",
+            "tsConfig": "libs/pop-icon/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "ui-src-lib-pop-icon": {
+      "root": "libs/ui/src/lib/pop-icon",
+      "sourceRoot": "libs/ui/src/lib/pop-icon/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "tsConfig": [
+              "libs/ui/src/lib/pop-icon/tsconfig.lib.json",
+              "libs/ui/src/lib/pop-icon/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/ui/src/lib/pop-icon/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui/src/lib/pop-icon/jest.config.js",
+            "tsConfig": "libs/ui/src/lib/pop-icon/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

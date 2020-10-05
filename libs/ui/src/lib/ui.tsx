@@ -4,7 +4,6 @@ import './ui.css';
 
 import Pngbutton from './pngbutton/Pngbutton';
 
-
 /* eslint-disable-next-line */
 export interface UiProps {}
 
