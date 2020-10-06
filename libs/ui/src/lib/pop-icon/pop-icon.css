@@ -1,0 +1,27 @@
+.popUp{
+    position:fixed;
+    width: 25px;
+    height: 25px;
+}
+
+.btn{
+    width: 30px;
+    height: 30px;
+    min-width: 25px;
+    border:none;
+    border-radius: 25px;
+    position: fixed;
+    left: 97.5%;
+    align-items: center;
+    margin:0;
+}
+
+.placeHolder{
+    width: 363px;
+    height: 550px;
+    background-color: var(--primary-2);
+    position:initial;
+    top:500px;
+    margin: 20px;
+    padding:5px;
+}

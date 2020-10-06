@@ -4,7 +4,9 @@ import axios from 'axios';
 import './newsbtn.css';
 
 /* eslint-disable-next-line */
-export interface NewsbtnProps {};
+export interface NewsbtnProps {
+  
+};
 
 const hnAPI = (initailUrl, initailData) =>{
   const [data, setData] = useState(initailData);
@@ -34,6 +36,7 @@ const hnAPI = (initailUrl, initailData) =>{
 };
 
 export const Newsbtn = (props: NewsbtnProps) => {
+
   const [query, setQuery] = useState('redux');
   // const data = hnAPI('https://hn.algolia.com/api/v1/search?query=redux', {hits:[]});
   // const isLoading = false;

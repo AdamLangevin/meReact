@@ -32,7 +32,7 @@ interface About {
 
 //needs an intermediate container to hold the icon, like messenger bubble
 const PopCont = ({ children }) => (
-	<Container style={{ margin: 20, width: 25, height: 25, 'min-width': 25, }}>
+	<Container>
 		
 	</Container>
 );
@@ -45,9 +45,7 @@ export const App = () => {
 			<NavBar />
 			<Ui />
 			{/* {user ? <UserDetail user={user} /> : <Login setUser={setUser} />} */}
-			<PopCont>
-				<PopIcon />
-			</PopCont>
+			<PopIcon />
 			{/* <PopIcon /> */}
 			{/* <Newsbtn /> */}
 	    </div>
